@@ -297,4 +297,4 @@ print("Final Accuracy Score ")
 print(accuracy_score(y_test, predictions))
 ```
 
-The "Final Accuracy Score" of approximately 0.803127, or 80.31%, indicates the accuracy of the ensemble model on the test data. In this context, an accuracy of 80.31% means that roughly 79.89% of the test data points were correctly classified by the ensemble model.
+The "Final Accuracy Score" of approximately 0.803127, or 80.31%, indicates the accuracy of the ensemble model on the test data. In this context, an accuracy of 80.31% means that roughly 80.31% of the test data points were correctly classified by the ensemble model.
