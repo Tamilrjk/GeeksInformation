@@ -2,8 +2,7 @@
 A Data Science Project on #GeeksInformation 
 
 An analysis of employee turnover in a company, using Python and data analysis techniques and Machine Learning.
-what is Customer churn?
-Customer churn, also known as customer attrition or customer turnover, refers to the phenomenon where customers or clients stop doing business with a company or stop using its services.
+
 
 ## Table of Contents
  - Data Description
@@ -19,11 +18,10 @@ Customer churn, also known as customer attrition or customer turnover, refers to
  - License
 
  ## Data Description
- What is Employee Turnover?
  
-Employee Turnover or Employee Turnover ratio is the measurement of the total number of employees who leave an organization in a particular year. Employee Turnover Prediction means to predict whether an employee is going to leave the organization in the coming period.
-A Company uses this predictive analysis to measure how many employees they will need if the potential employees will leave their organization. A company also uses this predictive analysis to make the workplace better for employees by understanding the core reasons for the high turnover ratio
+what is Customer churn?
 
+Customer churn, also known as customer attrition or customer turnover, refers to the phenomenon where customers or clients stop doing business with a company or stop using its services.
 ### Data Structure
 - Number of Rows: 7043
 - Number of Columns: 21
