@@ -406,4 +406,27 @@ print(report_svm)
 ```
 This code demonstrates how to initialize an SVM classifier with a linear kernel, train it using training data (X_train and y_train), predict on a testing set (X_test), calculate accuracy, and generate a classification report.
 
+### Logistic Regression
+use the following code to train a Logistic Regression classifier on your dataset
+```bash
 
+# Initialize the Logistic Regression classifier
+logreg_classifier = LogisticRegression(random_state=42)
+
+# Train the classifier
+logreg_classifier.fit(X_train, y_train)
+
+# Predict on the testing set
+y_pred_logreg = logreg_classifier.predict(X_test)
+
+# Calculate the accuracy
+accuracy_logreg = accuracy_score(y_test, y_pred_logreg)
+
+# Generate a classification report
+report_logreg = classification_report(y_test, y_pred_logreg)
+
+# Display the accuracy and the classification report
+print(f"Accuracy: {accuracy_logreg}")
+print("Classification Report:\n", report_logreg)
+```
+This code snippet demonstrates how to initialize and train a Logistic Regression classifier using scikit-learn. It then makes predictions on a testing set, calculates the accuracy, and generates a classification report.
