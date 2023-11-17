@@ -229,7 +229,9 @@ The annot=True parameter adds the correlation values to the heatmap for better i
 
 The colormap is set to 'coolwarm' for better visibility, and linewidths are adjusted for clarity.
 
+
 ![image3](https://github.com/Tamilrjk/GeeksInformation/blob/main/Task2/image/image1.png)
+
 
 The chat you sent is a correlation matrix, which is a table that shows the correlation between pairs of variables. The correlation coefficient is a measure of the linear relationship between two variables. It can range from -1 to 1, with a value of 1 indicating a perfect positive correlation, a value of -1 indicating a perfect negative correlation, and a value of 0 indicating no correlation.
 
