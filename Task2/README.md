@@ -338,3 +338,41 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 ```
 The pd.get_dummies function is used to perform one-hot encoding on categorical variables ('Department' and 'salary') in the DataFrame X. The drop_first=True parameter avoids the dummy variable trap by dropping the first encoded column for each categorical variable.
 
+## Machine Learning Model
+### Random Forest
+In this section of the code, we create and train a Random Forest Classifier using the scikit-learn library. The Random Forest Classifier is an ensemble learning method that combines the predictions of multiple decision trees to improve accuracy and generalization.
+```bash
+# Initialize the Random Forest classifier
+rf_classifier = RandomForestClassifier(n_estimators=100, random_state=42)
+
+# Train the classifier
+rf_classifier.fit(X_train, y_train)
+
+# Predict on the testing set
+y_pred = rf_classifier.predict(X_test)
+
+# Calculate the accuracy
+accuracy = accuracy_score(y_test, y_pred)
+# Generate a classification report
+report = classification_report(y_test, y_pred)
+
+# Display the accuracy and the classification report
+print(f'Accuracy: {accuracy}')
+print(report)
+```
+Random Forest Classifier:
+
+We create an instance of the Random Forest Classifier with 100 trees (n_estimators=100) and set a random state (random_state=42) for reproducibility.
+Training the Model:
+
+The model is trained using the training set (X_train, y_train) with the fit method.
+Prediction:
+
+We use the trained model to make predictions on the testing set (X_test) using the predict method.
+Evaluation:
+
+Accuracy and a classification report are calculated using the ground truth labels (y_test) and the predicted labels (y_pred).
+Results Display:
+
+Finally, the accuracy and classification report are printed to the console.
+
