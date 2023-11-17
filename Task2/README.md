@@ -156,4 +156,21 @@ plt.show()
 ```
 This code generates a 2x2 grid of histograms using seaborn, visualizing the distribution of key employee metrics such as satisfaction level, last evaluation, average monthly hours, and time spent in the company.
 
+![image1](https://github.com/Tamilrjk/GeeksInformation/blob/main/Task2/image/download.png)
+
+The provided image shows two graphs that illustrate the satisfaction level distribution and the last evaluation distribution of a company.
+
+**Satisfaction Level Distribution**
+The satisfaction level distribution graph shows the average monthly satisfaction level of employees, grouped by their average monthly hours worked. The x-axis of the graph shows the average monthly hours worked, and the y-axis shows the average monthly satisfaction level.
+
+The graph shows that, in general, employees who work more hours per month tend to have lower satisfaction levels. However, there is some variation within each group. For example, some employees who work 150 hours per month have satisfaction levels above 800, while others have satisfaction levels below 200.
+
+**Last Evaluation Distribution**
+
+The last evaluation distribution graph shows the average monthly last evaluation score of employees, grouped by their time spent in the company. The x-axis of the graph shows the time spent in the company, and the y-axis shows the average monthly last evaluation score.
+
+The graph shows that, in general, employees who have spent more time in the company tend to have higher last evaluation scores. However, there is some variation within each group. For example, some employees who have spent 5 years in the company have last evaluation scores above 6000, while others have last evaluation scores below 2000.
+
+Overall, the two graphs show that there is a positive correlation between employee satisfaction and last evaluation score. However, there is also some variation within each group, suggesting that there are other factors that also influence employee satisfaction and last evaluation score.
+
 
