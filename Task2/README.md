@@ -11,6 +11,7 @@ Employee turnover refers to the rate at which employees leave a company and are 
 - [Usage](#usage)
 - [Data OverView](#configuration)
 - [Exploration Data Analysis](#examples)
+- [Data Preprocessing](#Data Preprocessing)
 - [Machine Learning Model](#troubleshooting)
 - [Accurary](#Accurary)
 
@@ -313,3 +314,27 @@ The image you show is of the Distribution of Number of Projects graph. The x-axi
 
 The graph shows that the majority of 4 projects were taken on by more than 4000 employees.
 The graph shows that 7 projects were taken by a few peoples
+
+
+## Data Preprocessing
+Before building predictive models, it's essential to split the dataset into features (X) and the target variable (y). In this case, the target variable is 'left,' representing whether an employee has left the company.
+```bash
+# Split the data into features (X) and the target variable (y)
+X = df.drop('left', axis=1)
+y = df['left']`
+```
+X: Contains the features (independent variables) for each employee. The 'left' column is excluded using drop.
+y: Represents the target variable, indicating whether an employee has left the company.
+This separation is a common practice in machine learning workflows, allowing for the independent analysis of input features and the prediction of the target variable based on those features.
+
+
+In your Python script or Jupyter Notebook, use the following code to encode categorical variables and split the data into training and testing sets
+```bash
+# Encode categorical variables (e.g., 'Department' and 'salary') using one-hot encoding
+X = pd.get_dummies(X, columns=['Department', 'salary'], drop_first=True)
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+```
+The pd.get_dummies function is used to perform one-hot encoding on categorical variables ('Department' and 'salary') in the DataFrame X. The drop_first=True parameter avoids the dummy variable trap by dropping the first encoded column for each categorical variable.
+
