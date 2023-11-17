@@ -1,7 +1,7 @@
 # Employee Turnover Project
 
 ## Overview
-This project analyzes employee turnover in a company to identify trends and patterns.
+This project analyzes employee turnover in a company to identify trends and patterns.By analyzing historical employee data, encompassing job satisfaction, salary, work environment, and performance metrics, the model aims to identify employees at risk of leaving the organization.
 
 ## What is employee turnover?
 Employee turnover refers to the rate at which employees leave a company and are replaced by new employees. It is a critical metric for organizations, as it can impact productivity, morale, and overall business success. Employee turnover is usually expressed as a percentage and is calculated by dividing the number of employees who leave the company by the average number of employees during a specific period.
@@ -120,5 +120,40 @@ use the following code to check for null values in your DataFrame
 null_values = df.isnull().any()
 ```
 This code snippet will print the columns that contain null values in your DataFrame
+# Exploration Data Analysis(EDA)
+
+In your Python script or Jupyter Notebook, use the following code to create a set of subplots visualizing key employee metrics
+```bash
+
+# Set the style and grid for seaborn
+sns.set(style="whitegrid")
+
+# Create a figure with subplots
+plt.figure(figsize=(12, 6))
+
+# Subplot 1: Satisfaction Level Distribution
+plt.subplot(2, 2, 1)
+sns.histplot(df['satisfaction_level'], kde=True)
+plt.title('Satisfaction Level Distribution')
+
+# Subplot 2: Last Evaluation Distribution
+plt.subplot(2, 2, 2)
+sns.histplot(df['last_evaluation'], kde=True)
+plt.title('Last Evaluation Distribution')
+
+# Subplot 3: Average Monthly Hours Distribution
+plt.subplot(2, 2, 3)
+sns.histplot(df['average_montly_hours'], kde=True)
+plt.title('Average Monthly Hours Distribution')
+
+# Subplot 4: Time Spend in the Company Distribution
+plt.subplot(2, 2, 4)
+sns.histplot(df['time_spend_company'], kde=True)
+plt.title('Time Spend in the Company Distribution')
+
+# Display the subplots
+plt.show()
+```
+This code generates a 2x2 grid of histograms using seaborn, visualizing the distribution of key employee metrics such as satisfaction level, last evaluation, average monthly hours, and time spent in the company.
 
 
