@@ -265,11 +265,12 @@ The churn rate decreases over time, but it never reaches zero. This suggests tha
 ## Employee Attrition Visualization
 In this project, we use Python and the seaborn library to create a scatter plot visualizing the relationship between employee satisfaction level and average monthly hours, with points colored based on whether the employee left the company.
 ```bash
-f, ax = plt.subplots(figsize=(10, 6))
-sns.countplot(x='number_project', data=df, palette='viridis', ax=ax)
-ax.set_title('Distribution of Number of Projects')
-ax.set_xlabel('Number of Projects')
-ax.set_ylabel('Count')
+plt.figure(figsize=(10, 6))
+sns.scatterplot(x='satisfaction_level', y='average_montly_hours', data=df, hue='left', palette='coolwarm', alpha=0.6)
+plt.title('Satisfaction Level vs. Average Monthly Hours')
+plt.xlabel('Satisfaction Level')
+plt.ylabel('Average Monthly Hours')
+plt.legend(title='Left Company')
 plt.tight_layout()
 plt.show()
 ```
@@ -291,4 +292,16 @@ The graph also shows that there is a point at which employee satisfaction is so 
 
 employee satisfaction is a key driver of churn reduction. Companies that focus on improving customer satisfaction will see a decrease in their churn rate.
 
+## Visualizing Distribution of the Number of Projects
 
+In your Python script or Jupyter Notebook, the following code snippet uses seaborn to create a count plot, illustrating the distribution of the number of projects for employees
+```bash
+f, ax = plt.subplots(figsize=(10, 6))
+sns.countplot(x='number_project', data=df, palette='viridis', ax=ax)
+ax.set_title('Distribution of Number of Projects')
+ax.set_xlabel('Number of Projects')
+ax.set_ylabel('Count')
+plt.tight_layout()
+plt.show()
+```
+This code generates a count plot to visualize the distribution of the number of projects for employees in the DataFrame df. Adjust the DataFrame and column name ('number_project') based on the specifics of your dataset
