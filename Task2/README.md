@@ -250,3 +250,13 @@ This code generates a count plot using seaborn to visualize the distribution of 
 
 A bar at the value 0 on the x-axis indicates employees who have not left the company.
 A bar at the value 1 on the x-axis indicates employees who have left the company.
+
+
+![image4](https://github.com/Tamilrjk/GeeksInformation/blob/main/Task2/image/image2.png)
+
+
+The images show a churn distribution graph, which is a graph that shows the percentage of employees who churned at each point in time. The x-axis of the graph shows the left, and the y-axis shows the number of employees who churned.
+
+The churn rate is highest among the employees who have not left the company. This suggests that the company needs to focus on onboarding and providing employees with a positive employee experience.
+
+The churn rate decreases over time, but it never reaches zero. This suggests that there will always be some employees who churn, regardless of what the company does.
