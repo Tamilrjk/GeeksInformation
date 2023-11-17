@@ -191,3 +191,17 @@ plt.title('Salary Distribution')
 plt.show()
 ```
 This code generates a single figure with two side-by-side countplots using seaborn, visualizing the distribution of employees across different departments and salary levels.
+
+![image2](https://github.com/Tamilrjk/GeeksInformation/blob/main/Task2/image/image.png)
+
+The image you provided shows a graph of the distribution of salaries by department and salary. The department distribution is higher than the salary distribution, and the salary distribution is lower than the department distribution. The salary distribution is higher than the department distribution in the following departments: sales, accounting, HR, and technical. The salary distribution is lower than the department distribution in the following departments: IPPAN, bagmen, product manager, and RandD
+
+This graph suggests that the company has a higher concentration of employees in the sales, accounting, HR, and technical departments, and that these departments also have higher salaries. The IPPAN, bagmen, product manager, and RandD departments have a lower concentration of employees, and these departments also have lower salaries.
+
+This graph could be used by the company to make a number of decisions, such as how to allocate resources, how to set salaries, and how to recruit and retain employees
+
+The sales department has the highest salary distribution, followed by the accounting department. This suggests that these two departments are the most valuable to the company.
+
+The RandD department has the lowest salary distribution. This could be because RandD is a long-term investment, and the company may not expect to see immediate returns from this department.
+
+The salary distribution in the technical department is higher than the salary distribution in the IPPAN department. This suggests that the company values technical skills more than general skills.
