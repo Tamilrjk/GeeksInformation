@@ -230,7 +230,8 @@ The annot=True parameter adds the correlation values to the heatmap for better i
 The colormap is set to 'coolwarm' for better visibility, and linewidths are adjusted for clarity.
 
 
-![image3](https://github.com/Tamilrjk/GeeksInformation/blob/main/Task2/image/image1.png)
+![image3](https://github.com/Tamilrjk/GeeksInformation/blob/main/Task2/image/image1.png )
+
 
 
 The chat you sent is a correlation matrix, which is a table that shows the correlation between pairs of variables. The correlation coefficient is a measure of the linear relationship between two variables. It can range from -1 to 1, with a value of 1 indicating a perfect positive correlation, a value of -1 indicating a perfect negative correlation, and a value of 0 indicating no correlation.
@@ -260,3 +261,17 @@ The images show a churn distribution graph, which is a graph that shows the perc
 The churn rate is highest among the employees who have not left the company. This suggests that the company needs to focus on onboarding and providing employees with a positive employee experience.
 
 The churn rate decreases over time, but it never reaches zero. This suggests that there will always be some employees who churn, regardless of what the company does.
+
+## Employee Attrition Visualization
+In this project, we use Python and the seaborn library to create a scatter plot visualizing the relationship between employee satisfaction level and average monthly hours, with points colored based on whether the employee left the company.
+```bash
+f, ax = plt.subplots(figsize=(10, 6))
+sns.countplot(x='number_project', data=df, palette='viridis', ax=ax)
+ax.set_title('Distribution of Number of Projects')
+ax.set_xlabel('Number of Projects')
+ax.set_ylabel('Count')
+plt.tight_layout()
+plt.show()
+```
+This code generates a scatter plot that helps visualize the relationship between employee satisfaction levels, average monthly hours worked, and whether the employee left the company. Points are color-coded to indicate whether the employee left or stayed. The size of the figure, color palette, and transparency are adjusted for better visualization
+
