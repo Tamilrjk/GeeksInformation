@@ -247,7 +247,7 @@ sns.countplot(data=df, x='left')
 plt.title('Churn Distribution')
 plt.show()
 ```
-This code generates a count plot using seaborn to visualize the distribution of employee churn in the dataset. The x-axis represents the 'left' column, indicating whether an employee has left the company (1) or not (0). The y-axis represents the count of employees in each category.
+This code generates a count plot using Seaborn to visualize the distribution of employee churn in the dataset. The x-axis represents the 'left' column, indicating whether an employee has left the company (1) or not (0). The y-axis represents the count of employees in each category.
 
 A bar at the value 0 on the x-axis indicates employees who have not left the company.
 A bar at the value 1 on the x-axis indicates employees who have left the company.
@@ -263,10 +263,10 @@ The churn rate is highest among the employees who have not left the company. Thi
 The churn rate decreases over time, but it never reaches zero. This suggests that there will always be some employees who churn, regardless of what the company does.
 
 ## Employee Attrition Visualization
-In this project, we use Python and the seaborn library to create a scatter plot visualizing the relationship between employee satisfaction level and average monthly hours, with points colored based on whether the employee left the company.
+In this project, we use Python and the Seaborn library to create a scatter plot visualizing the relationship between employee satisfaction level and average monthly hours, with points colored based on whether the employee left the company.
 ```bash
 plt.figure(figsize=(10, 6))
-sns.scatterplot(x='satisfaction_level', y='average_montly_hours', data=df, hue='left', palette='coolwarm', alpha=0.6)
+sns.scatterplot(x='satisfaction_level', y='average monthly hours', data=df, hue='left', palette='coolwarm', alpha=0.6)
 plt.title('Satisfaction Level vs. Average Monthly Hours')
 plt.xlabel('Satisfaction Level')
 plt.ylabel('Average Monthly Hours')
@@ -279,18 +279,18 @@ This code generates a scatter plot that helps visualize the relationship between
 
 ![image5](https://github.com/Tamilrjk/GeeksInformation/blob/main/Task2/image/image3.png)
 
-The image you sent shows an employee satisfaction vs churn rate graph. The x-axis of the graph shows the employees' satisfaction score, and the y-axis shows the churn rate.
+The image you sent shows an employee satisfaction vs. churn rate graph. The x-axis of the graph shows the employees' satisfaction score, and the y-axis shows the churn rate.
 
 The graph shows a clear inverse correlation between employee satisfaction and churn rate. This means that as employee satisfaction increases, the churn rate decreases
 
 
-The image you sent shows a customer satisfaction vs churn rate graph. The x-axis of the graph shows the customer satisfaction score, and the y-axis shows the churn rate.
+The image you sent shows a customer satisfaction vs. churn rate graph. The x-axis of the graph shows the customer satisfaction score, and the y-axis shows the churn rate.
 
 The graph shows a clear inverse correlation between customer satisfaction and churn rate. This means that as customer satisfaction increases, the churn rate decreases. This is because customers who are more satisfied with a product or service are less likely to cancel their subscription or switch to a competitor.
 
-The graph also shows that there is a point at which employee satisfaction is so high that the churn rate is very low. This point is known as the employee satisfaction threshold. 
+The graph also shows that there is a point at which employee satisfaction is so high that the churn rate is very low. This point is known as the employee satisfaction threshold.
 
-employee satisfaction is a key driver of churn reduction. Companies that focus on improving customer satisfaction will see a decrease in their churn rate.
+Employee satisfaction is a key driver of churn reduction. Companies that focus on improving customer satisfaction will see a decrease in their churn rate.
 
 ## Visualizing Distribution of the Number of Projects
 
@@ -304,4 +304,12 @@ ax.set_ylabel('Count')
 plt.tight_layout()
 plt.show()
 ```
-This code generates a count plot to visualize the distribution of the number of projects for employees in the DataFrame df. Adjust the DataFrame and column name ('number_project') based on the specifics of your dataset
+This code generates a count plot to visualize the distribution of the number of projects for employees in the DataFrame DF. Adjust the data frame and column name ('number_project') based on the specifics of your dataset
+
+
+![image](https://github.com/Tamilrjk/GeeksInformation/blob/main/Task2/image/image4.png)
+
+The image you show is of the Distribution of Number of Projects graph. The x-axis of the graph shows the number of projects, and the y-axis shows the count of project
+
+The graph shows that the majority of 4 projects were taken on by more than 4000 employees.
+The graph shows that 7 projects were taken by a few peoples
