@@ -192,7 +192,9 @@ plt.show()
 ```
 This code generates a single figure with two side-by-side countplots using seaborn, visualizing the distribution of employees across different departments and salary levels.
 
+
 ![image2](https://github.com/Tamilrjk/GeeksInformation/blob/main/Task2/image/image.png)
+
 
 The image you provided shows a graph of the distribution of salaries by department and salary. The department distribution is higher than the salary distribution, and the salary distribution is lower than the department distribution. The salary distribution is higher than the department distribution in the following departments: sales, accounting, HR, and technical. The salary distribution is lower than the department distribution in the following departments: IPPAN, bagmen, product manager, and RandD
 
