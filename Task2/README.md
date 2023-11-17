@@ -7,15 +7,14 @@ This project analyzes employee turnover in a company to identify trends and patt
 Employee turnover refers to the rate at which employees leave a company and are replaced by new employees. It is a critical metric for organizations, as it can impact productivity, morale, and overall business success. Employee turnover is usually expressed as a percentage and is calculated by dividing the number of employees who leave the company by the average number of employees during a specific period.
 
 ## Table of Contents
-- [Installation](#installation)
 - [Usage](#usage)
 - [Data OverView](#configuration)
 - [Exploration Data Analysis](#examples)
 - [Data Preprocessing](#DataPreprocessing)
 - [Machine Learning Model](#troubleshooting)
-- [Accurary](#Accurary)
+- [Model Evaluation](#Accurary)
 
-  # Installation
+
 
 
   # Usage
@@ -430,3 +429,17 @@ print(f"Accuracy: {accuracy_logreg}")
 print("Classification Report:\n", report_logreg)
 ```
 This code snippet demonstrates how to initialize and train a Logistic Regression classifier using scikit-learn. It then makes predictions on a testing set, calculates the accuracy, and generates a classification report.
+
+# Model Evaluation
+
+After training and evaluating multiple models, here are the accuracies achieved:
+
+Random Forest: 98.71%
+Support Vector Machine (SVM): 77.18%
+Logistic Regression: 78.96%
+
+**Best Performing Model: Random Forest**
+The Random Forest model achieved the highest accuracy of 98.71%, making it the best-performing model in this project.
+
+# Conclusion
+In this project, the Random Forest model demonstrates superior performance with an accuracy of 98.71%. Consider using the Random Forest model for your specific application.
