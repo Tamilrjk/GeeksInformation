@@ -207,3 +207,26 @@ The sales department has the highest salary distribution, followed by the accoun
 The RandD department has the lowest salary distribution. This could be because RandD is a long-term investment, and the company may not expect to see immediate returns from this department.
 
 The salary distribution in the technical department is higher than the salary distribution in the IPPAN department. This suggests that the company values technical skills more than general skills.
+
+## Calculating and Visualizing Correlation Matrix
+The following code calculates the correlation matrix for numeric columns in your DataFrame and visualizes it as a heatmap
+
+```bash
+numeric_df = df.select_dtypes(include=[float, int])
+
+correlation_matrix = numeric_df.corr()
+
+plt.figure(figsize=(10, 6))
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', linewidths=0.5)
+plt.title('Correlation Matrix')
+plt.show()
+```
+It then calculates the correlation matrix using Pandas' corr() method.
+
+The resulting matrix is visualized as a heatmap using seaborn's heatmap function.
+
+The annot=True parameter adds the correlation values to the heatmap for better interpretation.
+
+The colormap is set to 'coolwarm' for better visibility, and linewidths are adjusted for clarity.
+
+
