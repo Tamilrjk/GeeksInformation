@@ -122,6 +122,7 @@ null_values = df.isnull().any()
 This code snippet will print the columns that contain null values in your DataFrame
 # Exploration Data Analysis(EDA)
 
+## Satisfaction Level Distribution
 In your Python script or Jupyter Notebook, use the following code to create a set of subplots visualizing key employee metrics
 ```bash
 
@@ -161,6 +162,7 @@ This code generates a 2x2 grid of histograms using seaborn, visualizing the dist
 The provided image shows two graphs that illustrate the satisfaction level distribution and the last evaluation distribution of a company.
 
 **Satisfaction Level Distribution**
+
 The satisfaction level distribution graph shows the average monthly satisfaction level of employees, grouped by their average monthly hours worked. The x-axis of the graph shows the average monthly hours worked, and the y-axis shows the average monthly satisfaction level.
 
 The graph shows that, in general, employees who work more hours per month tend to have lower satisfaction levels. However, there is some variation within each group. For example, some employees who work 150 hours per month have satisfaction levels above 800, while others have satisfaction levels below 200.
@@ -173,4 +175,19 @@ The graph shows that, in general, employees who have spent more time in the comp
 
 Overall, the two graphs show that there is a positive correlation between employee satisfaction and last evaluation score. However, there is also some variation within each group, suggesting that there are other factors that also influence employee satisfaction and last evaluation score.
 
+## Visualizing Department and Salary Distributions
 
+In your Python script or Jupyter Notebook, use the following code to create a side-by-side countplot visualizing the distribution of employees across different departments and salary levels
+```bash
+plt.figure(figsize=(12, 5))
+plt.subplot(1, 2, 1)
+sns.countplot(data=df, x='Department')
+plt.title('Department Distribution')
+
+plt.subplot(1, 2, 2)
+sns.countplot(data=df, x='salary')
+plt.title('Salary Distribution')
+
+plt.show()
+```
+This code generates a single figure with two side-by-side countplots using seaborn, visualizing the distribution of employees across different departments and salary levels.
