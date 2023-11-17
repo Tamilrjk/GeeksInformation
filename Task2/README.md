@@ -236,3 +236,17 @@ The colormap is set to 'coolwarm' for better visibility, and linewidths are adju
 The chat you sent is a correlation matrix, which is a table that shows the correlation between pairs of variables. The correlation coefficient is a measure of the linear relationship between two variables. It can range from -1 to 1, with a value of 1 indicating a perfect positive correlation, a value of -1 indicating a perfect negative correlation, and a value of 0 indicating no correlation.
 
 The correlation matrix shows that there is a strong positive correlation between satisfaction_level and last_evaluation (correlation coefficient = 0.8). This means that employees who are more satisfied with their jobs tend to receive higher evaluations.
+
+## Churn Distribution
+
+To visualize the distribution of employee churn in our dataset, we use the following code snippet in Python with seaborn
+```bash
+# Countplot to visualize churn distribution
+sns.countplot(data=df, x='left')
+plt.title('Churn Distribution')
+plt.show()
+```
+This code generates a count plot using seaborn to visualize the distribution of employee churn in the dataset. The x-axis represents the 'left' column, indicating whether an employee has left the company (1) or not (0). The y-axis represents the count of employees in each category.
+
+A bar at the value 0 on the x-axis indicates employees who have not left the company.
+A bar at the value 1 on the x-axis indicates employees who have left the company.
