@@ -275,3 +275,20 @@ plt.show()
 ```
 This code generates a scatter plot that helps visualize the relationship between employee satisfaction levels, average monthly hours worked, and whether the employee left the company. Points are color-coded to indicate whether the employee left or stayed. The size of the figure, color palette, and transparency are adjusted for better visualization
 
+
+![image5](https://github.com/Tamilrjk/GeeksInformation/blob/main/Task2/image/image3.png)
+
+The image you sent shows an employee satisfaction vs churn rate graph. The x-axis of the graph shows the employees' satisfaction score, and the y-axis shows the churn rate.
+
+The graph shows a clear inverse correlation between employee satisfaction and churn rate. This means that as employee satisfaction increases, the churn rate decreases
+
+
+The image you sent shows a customer satisfaction vs churn rate graph. The x-axis of the graph shows the customer satisfaction score, and the y-axis shows the churn rate.
+
+The graph shows a clear inverse correlation between customer satisfaction and churn rate. This means that as customer satisfaction increases, the churn rate decreases. This is because customers who are more satisfied with a product or service are less likely to cancel their subscription or switch to a competitor.
+
+The graph also shows that there is a point at which employee satisfaction is so high that the churn rate is very low. This point is known as the employee satisfaction threshold. 
+
+employee satisfaction is a key driver of churn reduction. Companies that focus on improving customer satisfaction will see a decrease in their churn rate.
+
+
