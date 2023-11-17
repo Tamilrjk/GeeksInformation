@@ -11,7 +11,7 @@ Employee turnover refers to the rate at which employees leave a company and are 
 - [Usage](#usage)
 - [Data OverView](#configuration)
 - [Exploration Data Analysis](#examples)
-- [Data Preprocessing](#Data Preprocessing)
+- [Data Preprocessing](#DataPreprocessing)
 - [Machine Learning Model](#troubleshooting)
 - [Accurary](#Accurary)
 
@@ -369,10 +369,41 @@ The model is trained using the training set (X_train, y_train) with the fit meth
 Prediction:
 
 We use the trained model to make predictions on the testing set (X_test) using the predict method.
+
 Evaluation:
 
 Accuracy and a classification report are calculated using the ground truth labels (y_test) and the predicted labels (y_pred).
+
 Results Display:
 
 Finally, the accuracy and classification report are printed to the console.
+
+### Support Vector Machines(SVM)
+In your Python script or Jupyter Notebook, you can use the following code to initialize, train, and evaluate a Support Vector Machine classifier
+```bash
+
+# Assuming X_train, X_test, y_train, y_test are already defined
+
+# Initialize the Support Vector Machine classifier
+svm_classifier = SVC(kernel='linear', random_state=42)
+
+# Train the classifier
+svm_classifier.fit(X_train, y_train)
+
+# Predict on the testing set
+y_pred_svm = svm_classifier.predict(X_test)
+
+# Calculate the accuracy
+accuracy_svm = accuracy_score(y_test, y_pred_svm)
+
+# Generate a classification report
+report_svm = classification_report(y_test, y_pred_svm)
+
+# Display the accuracy and the classification report
+print(f"Accuracy: {accuracy_svm}")
+print("Classification Report:")
+print(report_svm)
+```
+This code demonstrates how to initialize an SVM classifier with a linear kernel, train it using training data (X_train and y_train), predict on a testing set (X_test), calculate accuracy, and generate a classification report.
+
 
