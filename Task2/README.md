@@ -430,13 +430,52 @@ print("Classification Report:\n", report_logreg)
 ```
 This code snippet demonstrates how to initialize and train a Logistic Regression classifier using scikit-learn. It then makes predictions on a testing set, calculates the accuracy, and generates a classification report.
 
+## Multi-Layer Perceptron (MLP) Classifie
+```bash
+# Initialize the Multi-Layer Perceptron (MLP) Classifier
+mlp_model = MLPClassifier(random_state=42)
+
+# Train the model
+mlp_model.fit(X_train, y_train)
+# Predict on the test set
+y_pred_mlp = mlp_model.predict(X_test)
+# Evaluate the model
+accuracy_mlp = accuracy_score(y_test, y_pred_mlp)
+class_report_mlp = classification_report(y_test, y_pred_mlp)
+
+# Output the accuracy and the classification report for the MLP model
+print(accuracy_mlp)
+print(class_report_mlp)
+```
+
+Evaluating a Multi-Layer Perceptron (MLP) Classifier using the scikit-learn library. The MLP is a type of artificial neural network that consists of multiple layers of nodes, each connected to the next layer.
+
+The code initializes an MLP Classifier using scikit-learn's MLPClassifier with a random seed for reproducibility.
+
+The MLP model is trained using the fit method on training data (X_train, y_train).
+
+The trained model is used to make predictions on a test set (X_test), and the predictions are stored in y_pred_mlp.
+
+The code evaluates the performance of the MLP model using accuracy and classification report metrics.
+
+Run the script, and the model's accuracy along with a detailed classification report will be printed to the console.
+
 # Model Evaluation
+```bash
+accuracy_df = pd.DataFrame({'Model': ['Random Forest','Support Vector Machines', 'Logistic Regression', 'Gradient Boosting', 'MLP'], 'Accuracy': [accuracy_rf,accuracy_svm, accuracy_logreg, accuracy_gb, accuracy_mlp]})
+accuracy_df
+```
 
 After training and evaluating multiple models, here are the accuracies achieved:
 
 Random Forest: 98.71%
+
 Support Vector Machine (SVM): 77.18%
+
 Logistic Regression: 78.96%
+
+Multi-Layer Perceptron:93.80%
+
 
 **Best Performing Model: Random Forest**
 The Random Forest model achieved the highest accuracy of 98.71%, making it the best-performing model in this project.
