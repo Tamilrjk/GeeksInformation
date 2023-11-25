@@ -108,6 +108,35 @@ sns.heatmap(df.corr(), cmap='coolwarm', annot=True, fmt=".2f")
 plt.title('Correlation Matrix')
 plt.show()
 ```
+It selects numerical features from the DataFrame, excluding the 'Class' column.
+For each numerical feature, a box plot is created to visualize the distribution of that feature with respect to the 'Class' variable.
+```bash
+# Box plots for numerical features by class
+num_features = df.columns[:-1]  # Exclude the 'Class' column
+for feature in num_features:
+    plt.figure(figsize=(8, 5))
+    sns.boxplot(x='Class', y=feature, data=df)
+    plt.title(f'Box Plot of {feature} by Class')
+    plt.show()
+```
+Visualizing Transaction Amounts for Fraud Detection
+This code snippet utilizes the seaborn library to visualize the distribution of transaction amounts for both fraudulent and non-fraudulent transactions in a credit card fraud detection project. The goal is to provide insights into the patterns of transaction amounts for different classes.
+
+```bash
+ #Set the aesthetic style of the plots
+sns.set_style('whitegrid')
+
+#Plot the distribution of transaction amounts for fraudulent and non-fraudulent transactions
+plt.figure(figsize=(10,6))
+sns.histplot(df[df['Class'] == 0]['Amount'], bins=100, kde=True, color='blue', label='Non-Fraudulent')
+sns.histplot(df[df['Class'] == 1]['Amount'], bins=100, kde=True, color='red', label='Fraudulent')
+plt.title('Distribution of Transaction Amounts for Fraudulent and Non-Fraudulent Transactions')
+plt.xlabel('Amount')
+plt.ylabel('Frequency')
+plt.xscale('log')
+plt.legend()
+plt.show()
+```
 
 
 
