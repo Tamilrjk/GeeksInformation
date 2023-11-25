@@ -67,4 +67,21 @@ Time:
       Data Type: Numerical
       Description: The time elapsed since the first transaction in seconds.
 
+  V1-V28:
+  
+      Data Type: Numerical
+      Description:  Anonymous feature resulting from a PCA transaction. They are numerical variable derived from the original data to protect user identities.
+      
+   Amount:
+   
+      Data Type: Numerical
+      Description: The transaction amounts.
+
+Class:
+
+     Data Type: Numerical
+     Description: The target variables indicating whether the transaction is fraud (1) or not (0).
+
+
+
 
