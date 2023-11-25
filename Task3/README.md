@@ -81,6 +81,35 @@ Class:
 
      Data Type: Numerical
      Description: The target variables indicating whether the transaction is fraud (1) or not (0).
+  
+
+ ## Checking for Null Values in the DataFrame
+```bash
+df.isnull().sum()
+```
+The dataset is free of missing values, providing a clean and complete foundation for analysis. 
+
+# Exploratory Data Analysis
+
+To understand the distribution of fraudulent and non-fraudulent transactions in the dataset, a bar plot is created using Python's Seaborn library. The code snippet for visualization is as follows
+
+```bash
+# Visualize the class distribution (fraudulent vs. non-fraudulent transactions)
+plt.figure(figsize=(6, 4))
+sns.countplot(x='Class', data=df)
+plt.title('Class Distribution')
+plt.show()
+```
+In your data analysis, it's essential to understand the relationships between different variables. One effective way to visualize these relationships is by creating a correlation matrix heatmap.
+```bash
+# Visualize the correlation matrix
+plt.figure(figsize=(12, 8))
+sns.heatmap(df.corr(), cmap='coolwarm', annot=True, fmt=".2f")
+plt.title('Correlation Matrix')
+plt.show()
+```
+
+
 
 
 
