@@ -138,6 +138,54 @@ plt.legend()
 plt.show()
 ```
 
+# Machine Learning Model
+
+## Data splitting
+The dataset is split into training and testing sets to facilitate model training and evaluation.
+In the section, we explore the application of machine learning model to address our research question. we employed Logistic Regression and Random Forest due to their suitability for our binary classification problem.
+
+Logistic Regression:
+
+   Logistic regression is a linear model widely used for binary classification task. It calculates the probability of an belong to particular class and is particular useful when the relationship between the feature and target variable.
+
+```bash
+lr = LogisticRegression()
+lr.fit(X_train,y_train)
+y_pred = lr.predict(X_test)
+
+# Evaluate the model performance
+accuracy = accuracy_score(y_test, y_pred)
+precision = precision_score(y_test, y_pred)
+recall = recall_score(y_test, y_pred)
+f1 = f1_score(y_test, y_pred)
+​
+print(accuracy),
+print(precision),
+print(recall), 
+print(f1)
+```
+Random Forest:
+
+Random Forest is an ensemble learning method that combines the predictions of multiple decision trees. First random forest was instantiated after the model was trained using the training dataset (X_train and y_train)   and the model was used to make predictions on the test data.
+```bash
+# Train a Random Forest classifier on the balanced data
+rf_model = RandomForestClassifier()
+rf_model.fit(X_train, y_train)
+# Make predictions on the test set
+y_pred_ra = rf_model.predict(X_test)
+# Evaluate the model performance
+accuracy = accuracy_score(y_test, y_pred_ra)
+precision = precision_score(y_test, y_pred_ra)
+recall = recall_score(y_test, y_pred_ra)
+f1 = f1_score(y_test, y_pred_ra)
+
+print(accuracy),
+print(precision),
+print(recall), 
+print(f1)
+```
+
+
 
 
 
