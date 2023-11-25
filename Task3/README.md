@@ -11,9 +11,10 @@ Getting Started
 
 Installation
 
-Usage
 
-Data
+Data Overview 
+
+Exploratory Data Analysis
 
 Model
 
@@ -56,3 +57,14 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 ```
 It has all the necessary libraries 
+
+## Data Overview 
+
+The dataset consists of 250,000 instances and 31 features. The features include numerical variables.
+
+Time:
+
+      Data Type: Numerical
+      Description: The time elapsed since the first transaction in seconds.
+
+
