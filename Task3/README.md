@@ -225,4 +225,6 @@ Random Forest	99%          99%            100%         99%
 The ROC curve shows the performance of a binary classifier at different threshold values. The true positive rate (TPR) is the proportion of positive cases that are correctly identified by the classifier, and the false positive rate (FPR) is the proportion of negative cases that are incorrectly identified as positive by the classifier. The ROC curve is plotted with the TPR on the y-axis and the FPR on the x-axis. A perfect classifier would have a TPR of 1 and an FPR of 0, meaning that it would correctly identify all positive cases and none of the negative cases.
 
 
+# License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
