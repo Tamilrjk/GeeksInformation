@@ -100,6 +100,19 @@ sns.countplot(x='Class', data=df)
 plt.title('Class Distribution')
 plt.show()
 ```
+
+
+
+[image](https://github.com/Tamilrjk/GeeksInformation/blob/main/Task3/Image/download.png) 
+
+
+
+
+
+
+
+
+
 In your data analysis, it's essential to understand the relationships between different variables. One effective way to visualize these relationships is by creating a correlation matrix heatmap.
 ```bash
 # Visualize the correlation matrix
