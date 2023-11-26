@@ -210,10 +210,13 @@ print(precision),
 print(recall), 
 print(f1)
 ```
+# Evaluation
+To assess the preformation of the Logistic regression and Random Forest model, we employed a range of evaluation metrics, including accuracy, Precision, recall and F1 score. 
 
+             Model	Accuracy	  Precision	   Recall	    F1 score
+Logistic Regression	97%      97%          96%        97%
 
-
-
+Random Forest	99%          99%            100%         99%
 
 
 
