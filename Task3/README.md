@@ -121,6 +121,14 @@ sns.heatmap(df.corr(), cmap='coolwarm', annot=True, fmt=".2f")
 plt.title('Correlation Matrix')
 plt.show()
 ```
+
+
+[image](https://github.com/Tamilrjk/GeeksInformation/blob/main/Task3/Image/download%20(1).png)
+
+
+
+
+
 It selects numerical features from the DataFrame, excluding the 'Class' column.
 For each numerical feature, a box plot is created to visualize the distribution of that feature with respect to the 'Class' variable.
 ```bash
