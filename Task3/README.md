@@ -159,6 +159,11 @@ plt.legend()
 plt.show()
 ```
 
+[image](https://github.com/Tamilrjk/GeeksInformation/blob/main/Task3/Image/download%20(2).png)
+
+
+
+
 # Machine Learning Model
 
 ## Data splitting
