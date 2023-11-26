@@ -218,5 +218,11 @@ Logistic Regression	97%      97%          96%        97%
 
 Random Forest	99%          99%            100%         99%
 
+## Roc Curve
+
+[image](https://github.com/Tamilrjk/GeeksInformation/blob/main/Task3/Image/download%20(3).png)
+
+The ROC curve shows the performance of a binary classifier at different threshold values. The true positive rate (TPR) is the proportion of positive cases that are correctly identified by the classifier, and the false positive rate (FPR) is the proportion of negative cases that are incorrectly identified as positive by the classifier. The ROC curve is plotted with the TPR on the y-axis and the FPR on the x-axis. A perfect classifier would have a TPR of 1 and an FPR of 0, meaning that it would correctly identify all positive cases and none of the negative cases.
+
 
 
