@@ -1,5 +1,5 @@
 # Project Title
- ## Fraud Detection for Credit Cards
+ ## Fraud Detection for Credit Cards 
  
 # Project Description
 In this project, we aimed to develop an effective fraud detection system for credit card transactions. Two machine learning models, Logistic Regression and Random Forest, were employed to achieve this goal.
